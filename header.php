@@ -24,13 +24,17 @@
 				<div class="site-branding">
 					<!--<h1 class="site-title screen-reader-text">-->
 
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?>
-						<img src="<?php echo get_template_directory_uri() . '/assets/' ?>" class="header-logo" alt="header-logo" />
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri() . '../assets/icons/logo-white.svg' ?>" class="header-logo" alt="header-logo" />
 					</a>
 
 					<!--</h1>-->
 					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 				</div><!-- .site-branding -->
+
+				<div class="nav-btn">
+						<i class="fa fa-bars fa-fw fa-2x" aria-hidden="true"></i>
+				</div>
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>

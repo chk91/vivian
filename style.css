@@ -238,6 +238,12 @@ body {
     .container {
       max-width: 1240px; } }
 
+.wrap {
+  padding: 2rem 0; }
+
+.site-content {
+  padding-top: 150px; }
+
 .blue-font {
   color: #0088FF; }
 
@@ -676,11 +682,13 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
-  position: fixed;
-  height: 1150px; }
+  position: fixed; }
 
-.landingpage {
-  background: url("../../assets/background/home.png");
+.header-logo {
+  height: 100px; }
+
+.home {
+  background: url("../../assets/background/home.png") no-repeat;
   background-size: cover;
   height: 100vh;
   width: 100vw; }
@@ -692,3 +700,7 @@ object {
   font-size: 40px;
   font-weight: normal !important;
   padding: 2rem 1rem; }
+
+.greeting-content {
+  line-height: 28px;
+  padding: 2rem; }
