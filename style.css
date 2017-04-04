@@ -684,8 +684,21 @@ object {
 .site-header {
   position: fixed; }
 
+.header-bar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 2rem 4rem;
+  width: 100vw; }
+
 .header-logo {
   height: 100px; }
+
+.nav-button img {
+  height: 40px; }
 
 .home {
   background: url("../../assets/background/home.png") no-repeat;
