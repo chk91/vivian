@@ -22,7 +22,7 @@ get_header(); ?>
 
         <section class="landingpage container">
             <div class="greeting-wrapper">
-                <h1 class="greeting-header"><span class="bluefont">Hi!</span> I'm Vivian.</h1>
+                <h1 class="greeting-header"><span class="blue-font">Hi!</span> I'm Vivian.</h1>
                 <div class="greeting-content">
                     <p>I'm a real estate matchmaking expert based in Vancouver. Here you can search for your next home and get to know a little about me. Whether you're selling or buying your next home, let's get in touch to start your journey!</p>
                 </div>

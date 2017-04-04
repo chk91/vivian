@@ -222,6 +222,25 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+body {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-stretch: normal; }
+
+.container {
+  min-width: 350px;
+  max-width: 656px;
+  margin: 0 auto; }
+  @media (min-width: 641px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
+
+.blue-font {
+  color: #0088FF; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -231,7 +250,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Avenir";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -656,6 +675,10 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.site-header {
+  position: fixed;
+  height: 1150px; }
+
 .landingpage {
   background: url("../../assets/background/home.png");
   background-size: cover;
@@ -667,4 +690,5 @@ object {
 
 .greeting-header {
   font-size: 40px;
+  font-weight: normal !important;
   padding: 2rem 1rem; }

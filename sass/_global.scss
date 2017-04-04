@@ -5,6 +5,12 @@ $desktop-content-padding: 108px;
 $mobile-content-padding: 94px;
 $tablet-width: 641px;
 
+body {
+    font-family: 'Avenir';
+    font-style: normal;
+    font-stretch: normal;
+}
+
 .container {
     min-width: 350px;
     max-width: 656px;
@@ -15,4 +21,8 @@ $tablet-width: 641px;
     @include desktop {
         max-width: 1240px;
     }
+}
+
+.blue-font {
+    color: $color__brand-color-primary;
 }
