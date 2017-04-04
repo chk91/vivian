@@ -31,4 +31,8 @@
     border: 2px solid $color__brand-color-primary;
     color: $color__brand-color-primary;
     font-size: 20px;
+    &:hover {
+        background-color: $color__brand-color-primary;
+        color: white;
+    }
 }
