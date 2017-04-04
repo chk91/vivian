@@ -28,6 +28,8 @@ get_header(); ?>
                 </div>
             </div>
 
+            <button class="contact-button">Get In Touch</button>
+            
         </section>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
