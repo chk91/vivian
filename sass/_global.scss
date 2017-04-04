@@ -1,0 +1,18 @@
+// Media Query
+
+$desktop-width: 1240px; 
+$desktop-content-padding: 108px;
+$mobile-content-padding: 94px;
+$tablet-width: 641px;
+
+.container {
+    min-width: 350px;
+    max-width: 656px;
+    margin: 0 auto;
+    @include tablet {
+        max-width: 720px;
+    }
+    @include desktop {
+        max-width: 1240px;
+    }
+}
