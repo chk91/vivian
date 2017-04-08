@@ -8,6 +8,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 	<head>
+		<?php wp_enqueue_script( 'jquery' );?>
 		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
@@ -34,11 +35,15 @@
 							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 						</div><!-- .site-branding -->
 
-						<div class="nav-button">
-								<img src="<?php echo get_template_directory_uri() . '../assets/icons/menu-white.png' ?>" class="header-logo" alt="hamburger-menu" />
-						</div>
 
-						</nav><!-- #site-navigation -->
+						<div class="nav-cancel">
+							<img src="<?php echo get_template_directory_uri().'../assets/icons/cancel_icon.svg' ?>" />
+						</div>
+						<div class="main-nav sixteen columns" id="show-navi"><a id="show-nav" href="#">Toggle Nav</a></div>
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<?php wp_nav_menu( array( 'container_class' => 'main-nav', 'container' => 'nav'));?>
+							</nav>
+						<!-- #site-navigation -->
 					</div>
 				</div>
 			</header><!-- #masthead -->

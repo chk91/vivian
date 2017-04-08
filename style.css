@@ -137,9 +137,6 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 /* Copy */
-p {
-  margin-bottom: 1.5em; }
-
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -562,7 +559,7 @@ object {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 2rem 4rem;
+  padding: 2rem 4rem 0 4rem;
   width: 100vw; }
 
 .header-logo {
@@ -571,6 +568,24 @@ object {
 .nav-button img {
   height: 40px; }
 
+.main-nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+@media (min-width: 641px) {
+  .main-nav {
+    display: block; } }
+
+#show-nav {
+  background: #0088FF;
+  color: black;
+  display: block; }
+  @media (min-width: 641px) {
+    #show-nav {
+      display: none; } }
+
 .home {
   background: url("../../assets/background/home.png") no-repeat;
   background-size: cover;
@@ -578,16 +593,18 @@ object {
   width: 100vw; }
 
 .greeting-wrapper {
-  text-align: center; }
+  text-align: center;
+  padding: 2rem 0; }
 
 .greeting-header {
   font-size: 40px;
   font-weight: normal !important;
-  padding: 2rem 1rem; }
+  padding: 2rem 0; }
 
 .greeting-content {
   line-height: 28px;
-  padding: 2rem; }
+  padding: 0 3rem;
+  margin: 0 auto; }
 
 .contact-button {
   display: -ms-flexbox;
@@ -598,8 +615,16 @@ object {
   -ms-flex-align: center;
       align-items: center;
   background-color: transparent;
-  height: 50px;
-  width: 250px;
+  box-shadow: none;
+  height: 45px;
+  width: 210px;
   border: 2px solid #0088FF;
   color: #0088FF;
-  font-size: 20px; }
+  font-size: 20px;
+  text-transform: uppercase; }
+  .contact-button:hover {
+    background-color: #0088FF;
+    color: white;
+    border: 2px solid #0088FF;
+    box-shadow: none;
+    text-shadow: none; }

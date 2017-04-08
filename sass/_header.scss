@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
+    padding: 2rem 4rem 0 4rem;
     width: 100vw;
 }
 
@@ -17,5 +17,36 @@
 .nav-button {
     img {
     height: 40px;
+    }
+}
+
+// .main-navigation {
+//     background: #0088FF;
+//     height: 100px;
+//     display: none;
+//     @include tablet {
+//         display: block;
+//     }
+// }
+
+
+
+.main-nav {
+    // display: none;
+    ul {
+    display: flex;
+    flex-direction: column;
+    }
+    @include tablet {
+        display: block; 
+    }
+}
+
+#show-nav {
+    background: #0088FF;
+    color: black;
+    display: block;
+    @include tablet {
+        display: none;
     }
 }
