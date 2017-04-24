@@ -20,6 +20,13 @@
     line-height: 28px;
     padding: 0 3rem;
     margin: 0 auto;
+    @include tablet {
+        padding: 0;
+        width: 68%;
+    }
+    @include desktop {
+        width: 40%;
+    }
 }
 
 .contact-button {

@@ -39,7 +39,7 @@
 						<div class="nav-cancel">
 							<img src="<?php echo get_template_directory_uri().'../assets/icons/cancel_icon.svg' ?>" />
 						</div>
-						<div class="main-nav sixteen columns" id="show-navi"><a id="show-nav" href="#">Toggle Nav</a></div>
+						<div class="main-nav" id="show-navi"><a id="show-nav" href="#">Toggle Nav</a></div>
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								<?php wp_nav_menu( array( 'container_class' => 'main-nav', 'container' => 'nav'));?>
 							</nav>

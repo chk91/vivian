@@ -20,14 +20,14 @@
     }
 }
 
-// .main-navigation {
-//     background: #0088FF;
-//     height: 100px;
-//     display: none;
-//     @include tablet {
-//         display: block;
-//     }
-// }
+.main-navigation {
+    // background: #0088FF;
+    height: 100px;
+    display: none;
+    @include tablet {
+        display: block;
+    }
+}
 
 
 
@@ -35,10 +35,10 @@
     // display: none;
     ul {
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     }
     @include tablet {
-        display: block; 
+        flex-direction: row;
     }
 }
 

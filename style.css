@@ -118,6 +118,13 @@ body {
 .blue-font {
   color: #0088FF; }
 
+.blueheader {
+  color: #0088FF;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 2rem 0; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -568,15 +575,21 @@ object {
 .nav-button img {
   height: 40px; }
 
+.main-navigation {
+  height: 100px;
+  display: none; }
+  @media (min-width: 641px) {
+    .main-navigation {
+      display: block; } }
+
 .main-nav ul {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  display: flex; }
 
 @media (min-width: 641px) {
   .main-nav {
-    display: block; } }
+    -ms-flex-direction: row;
+        flex-direction: row; } }
 
 #show-nav {
   background: #0088FF;
@@ -605,6 +618,13 @@ object {
   line-height: 28px;
   padding: 0 3rem;
   margin: 0 auto; }
+  @media (min-width: 641px) {
+    .greeting-content {
+      padding: 0;
+      width: 68%; } }
+  @media (min-width: 1240px) {
+    .greeting-content {
+      width: 40%; } }
 
 .contact-button {
   display: -ms-flexbox;
@@ -628,3 +648,26 @@ object {
     border: 2px solid #0088FF;
     box-shadow: none;
     text-shadow: none; }
+
+.about-content {
+  text-align: center;
+  padding: 2rem; }
+
+.social-icons {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+  .social-icons i {
+    color: #0088FF;
+    font-size: 40px; }
+
+.ihf-grid-result-price title-bar-1 {
+  background-color: #0088FF !important; }
+
+.meet img {
+  height: 100%;
+  width: 80%;
+  display: block;
+  margin: 0 auto; }

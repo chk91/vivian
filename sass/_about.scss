@@ -1,0 +1,27 @@
+.about-content {
+    text-align: center;
+    padding: 2rem;
+}
+
+.social-icons {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    i {
+    color: $color__brand-color-primary;
+    font-size: 40px;
+    }
+}
+
+.ihf-grid-result-price title-bar-1 {
+    background-color: $color__brand-color-primary !important;
+}
+
+.meet {
+    img {
+        height: 100%;
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+}

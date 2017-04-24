@@ -1,12 +1,24 @@
 // js file for renewal funds
 	
-//   $('#show-nav').on('click', function() {
-//     $( ".main-nav").toggle("slow");
-//   })
+(function( $ ) {
+    
+    // navigation functions
+    $( '#show-nav' ).on('click',function( event ){
+        event.preventDefault();
+        $( '.site-header' ).addClass( 'header-resize' );
+        $( '.menu-toggle' ).hide();
+        var height = $(window).height(); 
+        $('.header-resize .main-navigation .menu').css('max-height', height-200);
+    });
 
-console.log("am i working?");
-$(document).ready(
-function() {
-        $('#show-nav').click(function(){alert('WORKS');});
-    }
-);
+    $( '.nav-cancel' ).on( 'click', function( event ){
+        event.preventDefault();
+        $( '.site-header' ).removeClass( 'header-resize' );
+    });
+
+    $(window).resize(function(){
+        $( '.site-header' ).removeClass( 'header-resize' );
+    });
+
+    $( '.acf-input-wrap input' ).prop( 'disabled', true );
+})(jQuery);
