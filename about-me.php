@@ -26,11 +26,20 @@ get_header();
         <section class="client-review">
 
             <h2 class="blueheader">From my Clients</h2>
-            <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
-            the_content();
-            endwhile; else: ?>
-            <p>Sorry, no posts matched your criteria.</p>
-            <?php endif; ?>
+            
+            <?php
+            global $more;
+            $more = 0;
+            query_posts('cat=15');
+            if(have_posts()) : while(have_posts()) : the_post();
+            ?></p>
+            <p><a href=&amp;quot;<?php the_permalink(); ?>&amp;quot;>
+<?php get_template_part( 'template-parts/content', 'AboutMe' ); ?>            <p><?php
+            endwhile;
+            endif;
+            wp_reset_query();
+            ?>
+
         </section>
 
         <section class="social">

@@ -121,3 +121,8 @@ function remove_admin_login_header() {
     remove_action('wp_head', '_admin_bar_bump_cb');
 }
 add_action('get_header', 'remove_admin_login_header');
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 200;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
