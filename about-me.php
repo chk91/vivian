@@ -26,15 +26,27 @@ get_header();
         <section class="client-review">
 
             <h2 class="blueheader">From my Clients</h2>
+
+            <div>
+            <ul class="carousel" data-flickity='{ "wrapAround": true }'>
             
             <?php
             global $more;
             $more = 0;
             query_posts('cat=15');
             if(have_posts()) : while(have_posts()) : the_post();
-            ?></p>
-            <p><a href=&amp;quot;<?php the_permalink(); ?>&amp;quot;>
-<?php get_template_part( 'template-parts/content', 'AboutMe' ); ?>            <p><?php
+            ?>
+            
+
+            <li class="carousel-cell"><a href=&amp;quot;<?php the_permalink(); ?>&amp;quot;>
+            <?php get_template_part( 'template-parts/content', 'AboutMe' ); ?>
+            </li>
+            
+            </ul>
+
+            </div>
+                        
+            <?php
             endwhile;
             endif;
             wp_reset_query();

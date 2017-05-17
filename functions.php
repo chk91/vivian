@@ -85,9 +85,11 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_enqueue_style( 'font-awesomxe-style', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' );
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style('flickity', '//unpkg.com/flickity@2/dist/flickity.min.css');
 
 
 	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'flickity', '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'realtor-bright', get_template_directory_uri() . '/build/js/realtor-bright.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'renewal-funds', get_template_directory_uri() . '/build/js/renewal-funds.min.js', array(), '20130115', true );
@@ -101,6 +103,7 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 function wpb_adding_scripts() {
 	wp_register_script('realtor-bright', plugins_url('/build/js/realtor-bright.min.js', _FILE_), array('jquery'), '1.1', true);
 	wp_enqueue_script('realtor-bright.js');
+
 }
 add_action ('wp_enqueue_scripts', 'wpb_adding_scripts');
 
