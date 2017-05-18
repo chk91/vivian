@@ -150,10 +150,11 @@ table {
   font-weight: 300;
   font-style: normal; }
 
-body {
-  font-family: "Nunito" !important;
+* {
+  font-family: 'Nunito';
   font-style: normal;
-  font-stretch: normal; }
+  font-stretch: normal;
+  font-weight: 200px; }
 
 .container {
   min-width: 350px;
@@ -182,6 +183,9 @@ body {
   text-transform: uppercase;
   padding: 2rem 0; }
 
+section {
+  padding: 1rem 0; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -191,7 +195,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "Avenir";
+  font-family: "Nunito";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -313,7 +317,6 @@ input[type="submit"] {
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
-  padding: .6em 1em .4em;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
   button:hover,
   input[type="button"]:hover,
@@ -656,6 +659,27 @@ object {
     #show-nav {
       display: none; } }
 
+.site-footer {
+  background-color: #DDDDDD;
+  padding: 2rem; }
+
+.self-info, .work-info {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px; }
+
+.copyright-info {
+  text-align: end;
+  padding: 15px;
+  font-size: 10px; }
+
+.bold-font {
+  font-weight: bold; }
+
+.bold-caps {
+  text-transform: uppercase;
+  font-weight: bold; }
+
 .home {
   background: url("../../assets/background/home.png") no-repeat;
   background-size: cover;
@@ -708,14 +732,24 @@ object {
 
 .about-content {
   text-align: center;
-  padding: 2rem; }
+  padding: 0 2rem 2rem 2rem; }
+
+.intro-content {
+  padding: 0 2rem 2rem 2rem; }
 
 .social-icons {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
   -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      justify-content: space-around;
+  margin: 0 auto; }
+  @media (min-width: 641px) {
+    .social-icons {
+      width: 60%; } }
+  @media (min-width: 1240px) {
+    .social-icons {
+      width: 20%; } }
   .social-icons i {
     color: #0088FF;
     font-size: 40px; }
@@ -726,21 +760,42 @@ object {
 @media (min-width: 641px) {
   .meet {
     display: -ms-flexbox;
-    display: flex; } }
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; } }
 
 .meet img {
   height: 100%;
   width: 50%;
   display: block;
   margin: 0 auto; }
+  @media (min-width: 641px) {
+    .meet img {
+      padding: 0 24px 24px 24px;
+      margin: 0; } }
+  @media (min-width: 1240px) {
+    .meet img {
+      width: 30%; } }
+
+@media (min-width: 1240px) {
+  .meet p {
+    width: 40%; } }
 
 .flickity-prev-next-button.previous {
   left: -10% !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  top: 35% !important; }
+  @media (min-width: 641px) {
+    .flickity-prev-next-button.previous {
+      left: -4.5% !important; } }
 
 .flickity-prev-next-button.next {
   right: -10% !important;
-  box-shadow: none !important; }
+  box-shadow: none !important;
+  top: 35% !important; }
+  @media (min-width: 641px) {
+    .flickity-prev-next-button.next {
+      right: -3% !important; } }
 
 .flickity-page-dots {
   display: none !important; }
@@ -748,9 +803,43 @@ object {
 .flickity-prev-next-button .arrow {
   fill: #0088FF !important; }
 
+.review-wrapper {
+  padding-top: 1rem; }
+
+.client-name {
+  text-align: end;
+  padding-top: 0.5rem; }
+  @media (min-width: 1240px) {
+    .client-name {
+      padding-right: 2rem; } }
+  .client-name a {
+    text-decoration: none;
+    color: black;
+    pointer-events: none;
+    cursor: default; }
+
 .carousel {
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
+  @media (min-width: 1240px) {
+    .carousel {
+      width: 70%; } }
 
 .carousel-cell {
   width: 100%; }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      width: 50%; } }
+
+.client-quotes img {
+  width: 5%; }
+
+.client-quotes p {
+  font-size: 14px; }
+  @media (min-width: 641px) {
+    .client-quotes p {
+      font-size: 16px; } }
+  @media (min-width: 1240px) {
+    .client-quotes p {
+      font-size: 12px;
+      padding-right: 2rem; } }

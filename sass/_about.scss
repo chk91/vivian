@@ -1,12 +1,23 @@
 .about-content {
     text-align: center;
-    padding: 2rem;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.intro-content {
+    padding: 0 2rem 2rem 2rem;
 }
 
 .social-icons {
     display: flex;
     width: 100%;
     justify-content: space-around;
+    margin: 0 auto;
+    @include tablet {
+        width: 60%;
+    }
+    @include desktop {
+        width: 20%;
+    }
     i {
     color: $color__brand-color-primary;
     font-size: 40px;
@@ -20,12 +31,25 @@
 .meet {
     @include tablet {
         display: flex;
+        justify-content: center;
     }
     img {
         height: 100%;
         width: 50%;
         display: block;
         margin: 0 auto;
+        @include tablet {
+            padding: 0 24px 24px 24px;
+            margin: 0;
+        }
+        @include desktop {
+            width: 30%;
+        }
+    }
+    p {
+        @include desktop {
+            width: 40%;
+        }
     }
 }
 
@@ -34,10 +58,18 @@
 .flickity-prev-next-button.previous {
     left: -10%!important;
     box-shadow: none!important;
+    top: 35%!important;
+    @include tablet {
+        left: -4.5%!important;
+    }
 }
 .flickity-prev-next-button.next {
     right: -10%!important;
     box-shadow: none!important;
+    top: 35%!important;
+    @include tablet {
+        right: -3%!important;
+    }
 }
 .flickity-page-dots {
     display: none!important;
@@ -46,11 +78,53 @@
     fill: $color__brand-color-primary!important;
 }
 
+.review-wrapper {
+    padding-top: 1rem;
+}
+
+.client-name {
+    text-align: end;
+    padding-top: 0.5rem;
+    @include desktop {
+    padding-right: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
 .carousel {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    @include desktop {
+        width: 70%;
+    }
 }
 
 .carousel-cell {
     width: 100%;
+
+    @include desktop {
+        width: 50%;
+    }   
+}
+
+.client-quotes {
+    img {
+        width: 5%;
+    }
+    p {
+        font-size: 14px;
+        @include tablet {
+            font-size: 16px;
+        }
+        @include desktop {
+            font-size: 12px;
+            padding-right: 2rem;
+        }
+        
+    }
 }

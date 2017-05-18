@@ -4,11 +4,7 @@ get_header();
 
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
 
-    <p>about-me.php</p>
 	<div class="entry-content">
 
         <h2 class="blueheader">Meet Vivian</h2>
@@ -29,15 +25,18 @@ get_header();
             <h2 class="blueheader">From my Clients</h2>
             
             <div class="review-wrapper">
-                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
                     <?php // Display blog posts on any page @ https://m0n.co/l
                     $temp = $wp_query; $wp_query= null;
                     $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
                     while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
                     <div class="carousel-cell">
-                    <h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
-                    <?php the_excerpt(); ?>
+                        <div class="client-quotes">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/icons/gray-quot.png" alt="Gray Quotations">
+                        <?php the_excerpt(); ?>
+                        <h2 class="client-name"><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
+                        </div>
                     </div>
                     <?php endwhile; ?>
 
@@ -70,3 +69,5 @@ get_header();
         </section>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+
+<?php get_footer(); ?>
