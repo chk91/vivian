@@ -14,6 +14,7 @@ get_header();
         <h2 class="blueheader">Meet Vivian</h2>
 
         <section class="meet">
+
             <?php 
             if ( has_post_thumbnail() ) {
             the_post_thumbnail();
@@ -26,32 +27,24 @@ get_header();
         <section class="client-review">
 
             <h2 class="blueheader">From my Clients</h2>
-
-            <div>
-            <ul class="carousel" data-flickity='{ "wrapAround": true }'>
             
-            <?php
-            global $more;
-            $more = 0;
-            query_posts('cat=15');
-            if(have_posts()) : while(have_posts()) : the_post();
-            ?>
-            
+            <div class="review-wrapper">
+                <div class="carousel" data-flickity='{ "wrapAround": true }'>
+                    <?php // Display blog posts on any page @ https://m0n.co/l
+                    $temp = $wp_query; $wp_query= null;
+                    $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);
+                    while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
 
-            <li class="carousel-cell"><a href=&amp;quot;<?php the_permalink(); ?>&amp;quot;>
-            <?php get_template_part( 'template-parts/content', 'AboutMe' ); ?>
-            </li>
-            
-            </ul>
+                    <div class="carousel-cell">
+                    <h2><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>
+                    <?php the_excerpt(); ?>
+                    </div>
+                    <?php endwhile; ?>
 
+                    <?php wp_reset_postdata(); ?>
+                </div>
             </div>
-                        
-            <?php
-            endwhile;
-            endif;
-            wp_reset_query();
-            ?>
-
+  
         </section>
 
         <section class="social">
