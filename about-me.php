@@ -16,7 +16,7 @@ get_header();
             the_post_thumbnail();
             }  ?>
 
-            <p class="about-content">As a realestate matchmaking expert, I am dedicated to selling your house or finding the fream home that your are searching for. Check out the testimonials of the wonderful clients that I've worked with as well as my latest activities on social media. Please call or send me a note if you have and questions. I'd love to hear from you!</p>
+            <p class="intro-content">As a realestate matchmaking expert, I am dedicated to selling your house or finding the fream home that your are searching for. Check out the testimonials of the wonderful clients that I've worked with as well as my latest activities on social media. Please call or send me a note if you have and questions. I'd love to hear from you!</p>
             
         </section>
 

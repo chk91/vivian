@@ -1,5 +1,8 @@
 .home {
-    background: url("../../assets/background/home.png") no-repeat;
+    background: url("../../assets/background/home.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -7,13 +10,13 @@
 
 .greeting-wrapper {
     text-align: center;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .greeting-header {
     font-size: 40px;
     font-weight: normal !important;
-    padding: 2rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .greeting-content {

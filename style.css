@@ -183,9 +183,6 @@ table {
   text-transform: uppercase;
   padding: 2rem 0; }
 
-section {
-  padding: 1rem 0; }
-
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -681,19 +678,19 @@ object {
   font-weight: bold; }
 
 .home {
-  background: url("../../assets/background/home.png") no-repeat;
+  background: url("../../assets/background/home.png") no-repeat center center;
   background-size: cover;
   height: 100vh;
   width: 100vw; }
 
 .greeting-wrapper {
   text-align: center;
-  padding: 2rem 0; }
+  padding: 0 0 2rem 0; }
 
 .greeting-header {
   font-size: 40px;
   font-weight: normal !important;
-  padding: 2rem 0; }
+  padding: 0 0 2rem 0; }
 
 .greeting-content {
   line-height: 28px;
@@ -730,12 +727,16 @@ object {
     box-shadow: none;
     text-shadow: none; }
 
+.page-template-about-me section {
+  padding: 1rem 0; }
+
 .about-content {
   text-align: center;
   padding: 0 2rem 2rem 2rem; }
 
 .intro-content {
-  padding: 0 2rem 2rem 2rem; }
+  text-align: center;
+  padding: 2rem; }
 
 .social-icons {
   display: -ms-flexbox;
