@@ -22,7 +22,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header container" role="banner">
-				<div class="header-wrapper">
+				<div class="header-wrapper container">
 					<div class="header-bar">
 						<div class="site-branding">
 							<!--<h1 class="site-title screen-reader-text">-->

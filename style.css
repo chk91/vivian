@@ -682,6 +682,9 @@ object {
     .intro-content {
       padding: 0 2rem 2rem 2rem; } }
 
+.review-wrapper {
+  width: 90%; }
+
 .social-icons {
   display: -ms-flexbox;
   display: flex;
@@ -789,6 +792,43 @@ object {
       font-size: 12px;
       padding-right: 2rem; } }
 
+.contact-info-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 2rem 3rem;
+  width: 100%;
+  margin: 0 auto; }
+
+.contactMe-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 0 auto;
+  width: 85vw;
+  font-size: 14px; }
+  @media (min-width: 641px) {
+    .contactMe-info {
+      width: 40vw; } }
+  @media (min-width: 1240px) {
+    .contactMe-info {
+      width: 20vw; } }
+  .contactMe-info i {
+    padding-right: 10px;
+    text-align: left; }
+  .contactMe-info p {
+    font-size: 14px;
+    text-align: left; }
+
+.contact-para {
+  text-align: center;
+  width: 70%;
+  padding: 2rem 0; }
+
 .wpcf7 {
   display: -ms-flexbox;
   display: flex;
@@ -802,14 +842,14 @@ object {
   border: 1px solid #979797;
   color: #D8D8D8;
   padding: 0 0.5rem;
-  width: 500px; }
+  width: 80vw; }
 
 .wpcf7-textarea {
   border-radius: 5px;
   border: 1px solid #979797;
   color: #D8D8D8;
   padding: 0 0.5rem;
-  width: 500px; }
+  width: 80vw; }
 
 .wpcf7-submit {
   display: -ms-flexbox;

@@ -1,3 +1,43 @@
+.contact-info-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 3rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contactMe-info {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 85vw;
+    font-size: 14px;
+    @include tablet {
+        width: 40vw;
+    }
+    @include desktop {
+        width: 20vw;
+    }
+    
+    i {
+        padding-right: 10px;
+        text-align: left;
+    }
+
+    p {
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+.contact-para {
+    text-align: center;
+    width: 70%;
+    padding: 2rem 0;
+}
+
+// Styling for Contact Form 7 @@@@@@@@@@@@@@@@@@@@@@@@@@@@
 .wpcf7 {
     display: flex;
     justify-content: center;
@@ -10,7 +50,7 @@
     border: 1px solid #979797;
     color: #D8D8D8;
     padding: 0 0.5rem;
-    width: 500px;
+    width: 80vw;
 }
 
 .wpcf7-textarea {
@@ -18,14 +58,14 @@
     border: 1px solid #979797;
     color: #D8D8D8;
     padding: 0 0.5rem;
-    width: 500px;
+    width: 80vw;
 }
 
 input::placeholder {
         // padding: 2rem 1rem;
     }
 
-    .wpcf7-submit {
+.wpcf7-submit {
     display: flex;
     margin: 1rem 0;
     justify-content: center;
