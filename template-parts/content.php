@@ -2,9 +2,7 @@
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
  */
-
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -21,7 +19,7 @@
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
+	
 	<div class="entry-content">
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
