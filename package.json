@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A starter theme for RED students, based on Underscores.",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "hexo-deployer-git": "^0.3.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "es6-promise": "^3.2.1",
@@ -25,12 +27,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://chk91.github.io/vivian/"
   },
   "author": "mandiwise",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redacademy/redstarter/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://chk91.github.io/vivian/"
 }
