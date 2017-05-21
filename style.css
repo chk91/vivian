@@ -869,3 +869,30 @@ object {
     border: 2px solid #0088FF;
     box-shadow: none;
     text-shadow: none; }
+
+.ihf-grid-result-basic-info-item1 {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative; }
+  .ihf-grid-result-basic-info-item1 b {
+    font-size: 40px;
+    padding-top: 7px;
+    padding-right: 2px;
+    color: #0088FF; }
+
+.sqft {
+  content: url("../../assets/icons/sqft-black.svg");
+  width: 18px; }
+
+.bedicon {
+  content: url("../../assets/icons/bed-black.svg");
+  height: 18px;
+  -ms-flex-order: 1;
+      order: 1;
+  position: absolute;
+  right: 9px;
+  top: 5px; }
+
+.bathicon {
+  content: url("../../assets/icons/shower-black.svg");
+  width: 15px; }

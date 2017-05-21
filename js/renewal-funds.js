@@ -25,6 +25,11 @@ console.log("hello");
 $("#ihf-minprice-homes").attr("placeholder", "Min price").val("").focus().blur();
 $("#ihf-maxprice-homes").attr("placeholder", "Max price").val("").focus().blur();
 
+$('.ihf-grid-result-basic-info-item1').prepend('<div class="bedicon"></div>')
+$('.ihf-grid-result-basic-info-item2').prepend('<div class="bathicon"></div>')
+$('.ihf-grid-result-basic-info-item3').prepend('<div class="sqft"></div>')
+
+
 
 
 })(jQuery);

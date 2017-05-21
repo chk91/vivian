@@ -1,3 +1,38 @@
-#ihf-main-container {
-    padding: 0;
+// .well {
+//     padding: 0!important;
+// }
+
+// .ihf-grid-result-container {
+//     padding: 0;
+// }
+
+.ihf-grid-result-basic-info-item1 {
+    display: flex;
+    position: relative;
+    b {
+        font-size: 40px;
+        padding-top: 7px;
+        padding-right: 2px;
+        color: $color__brand-color-primary;
+    }
+
+}
+
+.sqft {
+    content: url("../../assets/icons/sqft-black.svg");
+    width: 18px;
+}
+
+.bedicon {
+    content: url("../../assets/icons/bed-black.svg");
+    height: 18px;
+    order: 1;
+    position: absolute;
+    right: 9px;
+    top: 5px;
+}
+
+.bathicon {
+    content: url("../../assets/icons/shower-black.svg");
+    width: 15px;
 }
