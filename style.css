@@ -870,19 +870,36 @@ object {
     box-shadow: none;
     text-shadow: none; }
 
-.ihf-grid-result-basic-info-item1 {
+.ihf-grid-result-container {
+  position: relative;
+  padding: 2px; }
+
+.ihf-grid-result-basic-info-container {
+  min-width: 300px; }
+
+.ihf-grid-result-basic-info-item1, .ihf-grid-result-basic-info-item2, .ihf-grid-result-basic-info-item3 {
   display: -ms-flexbox;
   display: flex;
   position: relative; }
-  .ihf-grid-result-basic-info-item1 b {
-    font-size: 40px;
-    padding-top: 7px;
-    padding-right: 2px;
+  .ihf-grid-result-basic-info-item1 b, .ihf-grid-result-basic-info-item2 b, .ihf-grid-result-basic-info-item3 b {
+    font-size: 30px;
+    padding-top: 10px;
+    padding-right: 3px;
     color: #0088FF; }
+
+.ihf-grid-result-photocount {
+  position: absolute !important;
+  bottom: 70px;
+  right: 5px; }
 
 .sqft {
   content: url("../../assets/icons/sqft-black.svg");
-  width: 18px; }
+  height: 15px;
+  -ms-flex-order: 1;
+      order: 1;
+  position: absolute;
+  right: 15px;
+  top: 6px; }
 
 .bedicon {
   content: url("../../assets/icons/bed-black.svg");
@@ -890,9 +907,18 @@ object {
   -ms-flex-order: 1;
       order: 1;
   position: absolute;
-  right: 9px;
+  right: 10px;
   top: 5px; }
 
 .bathicon {
   content: url("../../assets/icons/shower-black.svg");
-  width: 15px; }
+  height: 15px;
+  -ms-flex-order: 1;
+      order: 1;
+  position: absolute;
+  right: 30px;
+  top: 5px; }
+
+.ihf-listing-detail {
+  width: 100vw;
+  padding: 0 2rem; }
