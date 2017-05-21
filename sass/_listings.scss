@@ -6,6 +6,10 @@
     min-width: 300px;
 }
 
+#ihf-main-container.ihf-color-scheme-light-blue .title-bar-1 {
+    background-color: $color__brand-color-primary!important;
+}
+
 .ihf-grid-result-basic-info-item1, .ihf-grid-result-basic-info-item2, .ihf-grid-result-basic-info-item3 {
     display: flex;
     position: relative;

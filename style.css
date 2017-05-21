@@ -877,6 +877,9 @@ object {
 .ihf-grid-result-basic-info-container {
   min-width: 300px; }
 
+#ihf-main-container.ihf-color-scheme-light-blue .title-bar-1 {
+  background-color: #0088FF !important; }
+
 .ihf-grid-result-basic-info-item1, .ihf-grid-result-basic-info-item2, .ihf-grid-result-basic-info-item3 {
   display: -ms-flexbox;
   display: flex;
