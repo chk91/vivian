@@ -7,7 +7,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 2rem 4rem 0 4rem;
-    width: 100vw;
 }
 
 .header-logo {
@@ -30,10 +29,8 @@
 }
 
 .main-nav {
-    // display: none;
     ul {
     display: flex;
-    // flex-direction: column;
     }
     @include tablet {
         flex-direction: row;

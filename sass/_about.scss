@@ -11,12 +11,8 @@
     text-align: center;
     padding: 2rem;
     @include tablet {
-        padding: 0 2rem 2rem 2rem;
+        padding: 0 2rem 2rem 0;
     }
-}
-
-.review-wrapper {
-    width: 90%;
 }
 
 .social-icons {
@@ -68,19 +64,19 @@
 // Flickty Custom CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .flickity-prev-next-button.previous {
-    left: -10%!important;
+    left: -8%!important;
     box-shadow: none!important;
     top: 35%!important;
     @include tablet {
-        left: -4.5%!important;
+        left: -5.5%!important;
     }
 }
 .flickity-prev-next-button.next {
-    right: -10%!important;
+    right: -8%!important;
     box-shadow: none!important;
     top: 35%!important;
     @include tablet {
-        right: -3%!important;
+        right: -5.5%!important;
     }
 }
 .flickity-page-dots {
@@ -130,6 +126,7 @@
     }
     p {
         font-size: 14px;
+        padding-left: 10px;
         @include tablet {
             font-size: 16px;
         }

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem;
     width: 100%;
     margin: 0 auto;
 }
@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 85vw;
+    width: 100vw;
     font-size: 14px;
     @include tablet {
         width: 40vw;
@@ -33,8 +33,7 @@
 
 .contact-para {
     text-align: center;
-    width: 70%;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 }
 
 // Styling for Contact Form 7 @@@@@@@@@@@@@@@@@@@@@@@@@@@@

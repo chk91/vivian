@@ -1,10 +1,30 @@
 console.log("hello");
 
-(function($) {
-	
-    $("#show-nav").on("click", function() {
-        console.log("hope");
-    $( ".main-nav").toggle("slow");
-  })
-	
-})( jQuery );
+(function( $ ) {
+    
+    // navigation functions
+    $( '#show-nav' ).on('click',function( event ){
+        event.preventDefault();
+        $( '.site-header' ).addClass( 'header-resize' );
+        $( '.menu-toggle' ).hide();
+        var height = $(window).height(); 
+        $('.header-resize .main-navigation .menu').css('max-height', height-200);
+    });
+
+    $( '.nav-cancel' ).on( 'click', function( event ){
+        event.preventDefault();
+        $( '.site-header' ).removeClass( 'header-resize' );
+    });
+
+    $(window).resize(function(){
+        $( '.site-header' ).removeClass( 'header-resize' );
+    });
+
+    $( '.acf-input-wrap input' ).prop( 'disabled', true );
+
+$("#ihf-minprice-homes").attr("placeholder", "Min price").val("").focus().blur();
+$("#ihf-maxprice-homes").attr("placeholder", "Max price").val("").focus().blur();
+
+
+
+})(jQuery);
