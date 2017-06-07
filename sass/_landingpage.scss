@@ -1,30 +1,36 @@
-.home {
-    background: url("../../assets/background/home.png") no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+.landingpage {
+    height: 85vh;
 }
 
 .greeting-wrapper {
     text-align: center;
     padding: 0 0 2rem 0;
+    background: url("../../assets/background/home.png") no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 80vh;
+    @include tablet {
+        background-position: 100% 0;
+    }
+    @include desktop {
+        background-position: 0 90%;
+    }
 }
 
 .greeting-header {
     font-size: 40px;
     font-weight: normal !important;
-    padding: 0 0 2rem 0;
+    padding: 2rem;
 }
 
 .greeting-content {
     line-height: 28px;
-    padding: 0 3rem;
+    padding: 2rem 3rem;
     margin: 0 auto;
     @include tablet {
-        padding: 0;
+        padding: 2rem 0;
         width: 68%;
     }
     @include desktop {
@@ -52,4 +58,21 @@
         box-shadow: none;
         text-shadow: none;
     }
+}
+
+// Featured Properties section @@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+#Featured_Properties {
+    ul {
+        margin: 0;
+    }
+}
+
+.property-divider {
+    background: white !important;
+}
+
+.gallery-prop-info {
+    position: relative;
+    height: 100vh;
 }

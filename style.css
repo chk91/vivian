@@ -616,28 +616,34 @@ object {
   text-transform: uppercase;
   font-weight: bold; }
 
-.home {
-  background: url("../../assets/background/home.png") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw; }
+.landingpage {
+  height: 85vh; }
 
 .greeting-wrapper {
   text-align: center;
-  padding: 0 0 2rem 0; }
+  padding: 0 0 2rem 0;
+  background: url("../../assets/background/home.png") no-repeat center center;
+  background-size: cover;
+  height: 80vh; }
+  @media (min-width: 641px) {
+    .greeting-wrapper {
+      background-position: 100% 0; } }
+  @media (min-width: 1240px) {
+    .greeting-wrapper {
+      background-position: 0 90%; } }
 
 .greeting-header {
   font-size: 40px;
   font-weight: normal !important;
-  padding: 0 0 2rem 0; }
+  padding: 2rem; }
 
 .greeting-content {
   line-height: 28px;
-  padding: 0 3rem;
+  padding: 2rem 3rem;
   margin: 0 auto; }
   @media (min-width: 641px) {
     .greeting-content {
-      padding: 0;
+      padding: 2rem 0;
       width: 68%; } }
   @media (min-width: 1240px) {
     .greeting-content {
@@ -666,6 +672,16 @@ object {
     box-shadow: none;
     text-shadow: none; }
 
+#Featured_Properties ul {
+  margin: 0; }
+
+.property-divider {
+  background: white !important; }
+
+.gallery-prop-info {
+  position: relative;
+  height: 100vh; }
+
 .page-template-about-me section {
   padding: 1rem 0; }
 
@@ -683,7 +699,7 @@ object {
 .social-icons {
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 75%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 0 auto; }

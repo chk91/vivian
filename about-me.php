@@ -51,7 +51,7 @@ get_header();
             <p class="about-content">Find me on social media for the latest updates on the real estate market!</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/vivian.yu.58">
-                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
                 </a>
                 <a href="https://www.linkedin.com/in/vivianyu1/">
                 <i class="fa fa-linkedin-square" aria-hidden="true"></i>
