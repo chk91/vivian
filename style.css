@@ -580,12 +580,17 @@ object {
 
 .main-nav ul {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 @media (min-width: 641px) {
   .main-nav {
     -ms-flex-direction: row;
         flex-direction: row; } }
+
+.main-nav li {
+  width: 100%; }
 
 #show-nav {
   background: #0088FF;
@@ -619,23 +624,36 @@ object {
 .landingpage {
   height: 85vh; }
 
-.greeting-wrapper {
-  text-align: center;
-  padding: 0 0 2rem 0;
+.home {
   background: url("../../assets/background/home.png") no-repeat center center;
   background-size: cover;
-  height: 80vh; }
+  height: 100vh; }
   @media (min-width: 641px) {
-    .greeting-wrapper {
+    .home {
       background-position: 100% 0; } }
   @media (min-width: 1240px) {
-    .greeting-wrapper {
+    .home {
       background-position: 0 90%; } }
+  .home .col-xs-6 {
+    text-align: left !important;
+    width: 100%;
+    display: inline-block !important;
+    float: none !important; }
+  .home .ihf-for-sale-price {
+    font-size: 18px;
+    color: #0088FF; }
+
+.greeting-wrapper {
+  text-align: center;
+  padding: 0 0 2rem 0; }
 
 .greeting-header {
   font-size: 40px;
   font-weight: normal !important;
-  padding: 2rem; }
+  padding: 0 2rem; }
+  @media (min-width: 641px) {
+    .greeting-header {
+      padding: 2rem 2rem 0 2rem; } }
 
 .greeting-content {
   line-height: 28px;
@@ -671,6 +689,11 @@ object {
     border: 2px solid #0088FF;
     box-shadow: none;
     text-shadow: none; }
+
+.home #ihf-main-container .col-xs-12 {
+  padding: 1rem; }
+  .home #ihf-main-container .col-xs-12 a {
+    font-size: 20px; }
 
 #Featured_Properties ul {
   margin: 0; }

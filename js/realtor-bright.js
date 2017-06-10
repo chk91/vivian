@@ -1,7 +1,7 @@
 // js file for renewal funds
 	
 // (function( $ ) {
-    
+//     console.log("am i working?");
 //     // navigation functions
 //     $( '#show-nav' ).on('click',function( event ){
 //         event.preventDefault();
@@ -31,3 +31,4 @@
 //   }
 //   });
 // });
+// console.log("am i working?");

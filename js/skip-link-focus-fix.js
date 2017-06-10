@@ -30,5 +30,6 @@
 			}
 		}, false );
 	}
+	console.log("am i working?");
 })();
 console.log("am i working?");

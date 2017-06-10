@@ -28,12 +28,20 @@
     }
 }
 
+// .menu {
+//     display: none;
+// }
+
 .main-nav {
     ul {
     display: flex;
+    flex-direction: column;
     }
     @include tablet {
         flex-direction: row;
+    }
+    li {
+        width: 100%;
     }
 }
 

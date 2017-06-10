@@ -65,7 +65,10 @@ get_header();
         <section class="contactme">
             <h2 class="blueheader">Get In Touch</h2>
             <p class="about-content">Please feel free to contact me with any real estate questions you may have and I'll be in touch with you soon!</p>
-            <button class="contact-button">Get In Touch</button>
+            <form action="contact-me-2">
+                <button class="contact-button">Get In Touch</button>
+            </form>
+
         </section>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->

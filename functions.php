@@ -90,22 +90,15 @@ function red_starter_scripts() {
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'flickity', '//unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	wp_enqueue_script( 'realtor-bright', get_template_directory_uri() . '/build/js/realtor-bright.min.js', array(), '20130115', true );
-	wp_enqueue_script( 'renewal-funds', get_template_directory_uri() . '/build/js/renewal-funds.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), null, true );
+	wp_enqueue_script( 'realtor-bright', get_template_directory_uri() . '/build/js/realtor-bright.min.js', array(), null, true );
+	wp_enqueue_script( 'renewal-funds-js', get_template_directory_uri() . '/build/js/renewal-funds.min.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
-
-function wpb_adding_scripts() {
-	wp_register_script('realtor-bright', plugins_url('/build/js/realtor-bright.min.js', _FILE_), array('jquery'), '1.1', true);
-	wp_enqueue_script('realtor-bright.js');
-
-}
-add_action ('wp_enqueue_scripts', 'wpb_adding_scripts');
 
 /**
  * Custom template tags for this theme.
@@ -129,3 +122,4 @@ function wpdocs_custom_excerpt_length( $length ) {
     return 200;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+

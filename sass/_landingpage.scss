@@ -2,27 +2,49 @@
     height: 85vh;
 }
 
-.greeting-wrapper {
-    text-align: center;
-    padding: 0 0 2rem 0;
+.home {
     background: url("../../assets/background/home.png") no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     @include tablet {
         background-position: 100% 0;
     }
     @include desktop {
         background-position: 0 90%;
     }
+
+    .col-xs-6 {
+        text-align: left !important;
+        width: 100%;
+        display: inline-block !important;
+        float: none !important;
+    }
+
+    .ihf-for-sale-price {
+        font-size: 18px;
+        color: $color__brand-color-primary;
+    }
+
+    .gallery-prop-info {
+       
+    }
+}
+
+.greeting-wrapper {
+    text-align: center;
+    padding: 0 0 2rem 0;
 }
 
 .greeting-header {
     font-size: 40px;
     font-weight: normal !important;
-    padding: 2rem;
+    padding: 0 2rem;
+    @include tablet {
+        padding: 2rem 2rem 0 2rem;
+    }
 }
 
 .greeting-content {
@@ -61,7 +83,14 @@
 }
 
 // Featured Properties section @@@@@@@@@@@@@@@@@@@@@@@@@@@
-
+.home {
+    #ihf-main-container .col-xs-12 {
+        padding: 1rem;
+        a {
+            font-size: 20px;
+        }
+    }
+}
 #Featured_Properties {
     ul {
         margin: 0;
