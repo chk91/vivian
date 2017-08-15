@@ -11,7 +11,11 @@
     text-align: center;
     padding: 2rem;
     @include tablet {
-        padding: 0 2rem 2rem 0;
+        padding: 0 2rem 0 2rem;
+    }
+    @include desktop {
+        padding: 0 4rem 0 4rem;
+        font-size: 18px;
     }
 }
 
@@ -114,6 +118,9 @@
 
 .carousel-cell {
     width: 100%;
+    @include tablet {
+        width: 50%;
+    }
 
     @include desktop {
         width: 50%;
@@ -135,5 +142,14 @@
             padding-right: 2rem;
         }
         
+    }
+}
+
+.flickity-viewport {
+    @include tablet {
+        height: 320px!important;
+    }
+    @include desktop {
+    height: 200px!important;
     }
 }

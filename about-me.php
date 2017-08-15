@@ -25,7 +25,7 @@ get_header();
             <h2 class="blueheader">From my Clients</h2>
             
             <div class="review-wrapper">
-                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel" data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround": true}'>
                     <?php // Display blog posts on any page @ https://m0n.co/l
                     $temp = $wp_query; $wp_query= null;
                     $wp_query = new WP_Query(); $wp_query->query('posts_per_page=5' . '&paged='.$paged);

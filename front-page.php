@@ -3,22 +3,20 @@
  * The main template file.
  *
  */
- /* Template Name: Welcome */ 
 
 get_header('front'); ?>
-<script type="text/javascript"
-   src="<?php bloginfo("template_url"); ?>/build/js/renewal-funds.min.js"></script>
-<?php wp_enqueue_script( 'jquery' );?>
 
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>> 
+			<?php 
+				// conditional logic to migrate to custom teplate part on user role
+				if ( current_user_can( 'pc_user') ) :
+					get_template_part( 'template-parts/content', 'portfolio-company' );
+				endif; 
+			?>
 
-	<header class="entry-header">
-		<!--<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>-->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
+			<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html( 'Pages:' ),
@@ -49,5 +47,9 @@ get_header('front'); ?>
 					?>
 			</div>
 		</section>
-	</div><!-- .entry-content -->
-</article><!-- #post-## -->
+			
+
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+<?php get_footer(); ?>

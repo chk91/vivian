@@ -11,7 +11,11 @@ $tablet-width: 641px;
     font-stretch: normal;
 }
 
-.container {
+li {
+    list-style: none;
+}
+
+.container, #ihomefinderquicksearchwidget-7, .ihf-listing-detail {
     min-width: 350px;
     max-width: 656px;
     margin: 0 auto;
@@ -22,14 +26,16 @@ $tablet-width: 641px;
         max-width: 1240px;
     }
 }
-
+.entry-header {
+    display: none;
+}
 .wrap {
     padding: 2rem 0;
 }
 
-.site-content {
-    padding-top: 150px;
-}
+// .site-content {
+//     padding-top: 150px;
+// }
 
 .blue-font {
     color: $color__brand-color-primary;

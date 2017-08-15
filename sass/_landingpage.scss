@@ -1,19 +1,29 @@
 .landingpage {
     height: 85vh;
-}
-
-.home {
-    background: url("../../assets/background/home.png") no-repeat center center; 
+    background: url("../../assets/background/home.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     height: 100vh;
+    // margin: -68px;
+    padding-top: 168px;
     @include tablet {
         background-position: 100% 0;
     }
     @include desktop {
         background-position: 0 90%;
+        // -webkit-background-size: contain;
+        // -moz-background-size: contain;
+        // -o-background-size: contain;
+        // background-size: contain;
+    }
+}
+
+.home {
+    
+    .site-content {
+        padding-top: 0;
     }
 
     .col-xs-6 {
@@ -28,8 +38,13 @@
         color: $color__brand-color-primary;
     }
 
-    .gallery-prop-info {
-       
+    #ihomefinderpropertiesgallery-2 {
+        list-style: none!important;
+    }
+
+    #ihf-main-container .ihf-center{
+        width: 100%!important;
+        margin-left: 0!important;
     }
 }
 
@@ -83,6 +98,11 @@
 }
 
 // Featured Properties section @@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+.featured-properties {
+    margin-top: 68px;
+}
+
 .home {
     #ihf-main-container .col-xs-12 {
         padding: 1rem;
@@ -103,5 +123,5 @@
 
 .gallery-prop-info {
     position: relative;
-    height: 100vh;
+    // height: 100vh;
 }
