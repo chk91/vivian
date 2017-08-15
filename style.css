@@ -567,61 +567,131 @@ object {
   -ms-flex-align: center;
       align-items: center;
   padding: 2rem 4rem 0 4rem;
-  width: 100vw; }
+  width: 100vw;
+  background-color: white; }
 
-.header-logo {
+.header-logo-front {
+  height: 100px;
+  width: 175px;
+  background: url("../../assets/icons/logo.svg") no-repeat center; }
+  @media (min-width: 641px) {
+    .header-logo-front {
+      background: url("../../assets/icons/logo-white.svg") no-repeat center; } }
+
+.header-logo-scrolled {
+  height: 100px;
+  width: 175px;
+  background: url("../../assets/icons/logo.svg") no-repeat center; }
+
+.header-logo, .header-logo-front {
   height: 100px; }
 
 .nav-button img {
   height: 40px; }
 
+.hamburger-front {
+  height: 50px;
+  background: url("../../assets/icons/menu-blue.jpg") no-repeat center; }
+
 .main-navigation {
-  display: none; }
+  display: none;
+  position: absolute;
+  top: 132px;
+  left: 0;
+  background: white;
+  width: 100%; }
+  @media (min-width: 641px) {
+    .main-navigation {
+      background: transparent;
+      display: -ms-flexbox !important;
+      display: flex !important; } }
+  .main-navigation li {
+    border-bottom: 1px black solid;
+    padding: 1rem; }
+    @media (min-width: 641px) {
+      .main-navigation li {
+        border-bottom: none; } }
   @media (min-width: 641px) {
     .main-navigation {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
-          justify-content: flex-end; } }
+          justify-content: flex-end;
+      position: static; } }
+
+.main-navigation-scrolled {
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 132px;
+  left: 0;
+  width: 100%; }
+  @media (min-width: 641px) {
+    .main-navigation-scrolled {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+      position: static; } }
 
 .menu {
   display: none; }
   .menu a {
     color: #0088FF; }
-    .menu a:hover {
-      border-top: 2px solid #0088FF; }
+    @media (min-width: 641px) {
+      .menu a:hover {
+        border-top: 2px solid #0088FF; } }
 
 .sub-menu {
-  -ms-flex-direction: column;
-      flex-direction: column;
+  -ms-flex-direction: row;
+      flex-direction: row;
   background-color: #0088FF;
   color: white; }
   .sub-menu a {
     color: white; }
     .sub-menu a:hover {
       border: none; }
+  @media (min-width: 641px) {
+    .sub-menu {
+      -ms-flex-direction: column;
+          flex-direction: column; } }
 
-@media (min-width: 641px) {
-  .hamburger {
-    display: none; } }
-
-@media (min-width: 1240px) {
-  .main-nav {
-    width: 50%; } }
-
-.main-nav ul {
+.hamburger {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: 50px;
+  background: url("../../assets/icons/menu-blue.jpg") no-repeat center; }
   @media (min-width: 641px) {
-    .main-nav ul {
-      -ms-flex-direction: row;
-          flex-direction: row; } }
+    .hamburger {
+      display: none; } }
 
-@media (min-width: 641px) {
-  .main-nav li {
-    padding: 0 10px; } }
+.main-nav {
+  width: 100%; }
+  @media (min-width: 1240px) {
+    .main-nav {
+      width: 50%; } }
+  .main-nav ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    @media (min-width: 641px) {
+      .main-nav ul {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+  .main-nav li:hover {
+    background-color: aliceblue; }
+  @media (min-width: 641px) {
+    .main-nav li {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      min-width: 117px; }
+      .main-nav li:hover {
+        background-color: transparent; } }
 
 #show-nav {
   background: #0088FF;
@@ -634,10 +704,25 @@ object {
 .mob-menu-header-holder, .mobmenu-push-wrap {
   background: transparent !important; }
 
+.home .header-bar {
+  background-color: white; }
+  @media (min-width: 641px) {
+    .home .header-bar {
+      background-color: transparent; } }
+
 .home .menu a {
-  color: white; }
+  color: #0088FF; }
   .home .menu a:hover {
     color: #1353BA; }
+  @media (min-width: 641px) {
+    .home .menu a {
+      color: white; } }
+
+.home .scrolled {
+  background-color: white; }
+
+.home .menu-scrolled a {
+  color: #0088FF; }
 
 .home .sub-menu {
   background-color: white;

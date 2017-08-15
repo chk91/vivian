@@ -12,9 +12,25 @@
     align-items: center;
     padding: 2rem 4rem 0 4rem;
     width: 100vw;
+    background-color: white;
 }
 
-.header-logo {
+.header-logo-front {
+    height: 100px;
+    width: 175px;
+    background: url('../../assets/icons/logo.svg') no-repeat center;
+    @include tablet {
+        background: url('../../assets/icons/logo-white.svg') no-repeat center;
+    }
+}
+
+.header-logo-scrolled {
+    height: 100px;
+    width: 175px;
+    background: url('../../assets/icons/logo.svg') no-repeat center;
+}
+
+.header-logo, .header-logo-front {
     height: 100px;
 }
 
@@ -24,26 +40,72 @@
     }
 }
 
+.hamburger-front {
+    height: 50px;
+    background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
+}
+
+// .hamburger-front-scrolled {
+//     height: 50px;
+//     background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
+// }
+
 .main-navigation {
     display: none;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    background: white;
+    width: 100%;
+
+    @include tablet {
+        background: transparent;
+        display: flex!important;
+    }
+
+    li {
+        border-bottom: 1px black solid;
+        padding: 1rem;
+        @include tablet {
+            border-bottom: none;
+        }
+    }
+
     @include tablet {
         display: flex;
         justify-content: flex-end;
+        position: static;
+    }
+}
+
+.main-navigation-scrolled {
+    display: flex;
+    position: absolute;
+    top: 132px;
+    left: 0;
+    width: 100%;
+    @include tablet {
+        display: flex;
+        justify-content: flex-end;
+        position: static;
     }
 }
 
 .menu {
     display: none;
+
     a {
         color: #0088FF;
-        &:hover {
-            border-top: 2px solid #0088FF;
+        @include tablet {
+            &:hover {
+                border-top: 2px solid #0088FF;
+            }
         }
     }
 }
 
 .sub-menu {
-    flex-direction: column;
+    flex-direction: row;
     background-color: #0088FF;
     color: white;
     a {
@@ -52,15 +114,23 @@
             border: none;
         }
     }
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 .hamburger {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
     @include tablet {
         display: none;
     }
 }
 
 .main-nav {
+    width: 100%;
     @include desktop {
         width: 50%;
     }
@@ -74,8 +144,17 @@
     }
 
     li {
+        &:hover {
+                background-color: aliceblue;
+            }
         @include tablet {
-            padding: 0 10px;
+            display: flex;
+            justify-content: center;
+            // padding: 0 9px;
+            min-width: 117px;
+            &:hover {
+                background-color: transparent;
+            }
         }
     }
 }
@@ -94,17 +173,40 @@
 }
 
 .home {
+
+    .header-bar {
+        background-color: white;
+        @include tablet {
+            background-color: transparent;
+        }
+    }
+
     .menu a {
-        color: white;
+        color: #0088FF;
         &:hover {
             color: $color__brand-color-secondary;
         }
+        @include tablet {
+            color: white;
+        }
     }
+
+    .scrolled {
+        background-color: white;
+    }
+
+    .menu-scrolled {
+        a {
+        color: #0088FF;
+        }
+    }
+
     .sub-menu {
     background-color: white;
     color: white;
-    a {
-        color: #0088FF;
+        a {
+            color: #0088FF;
+        }
     }
-    }
+    
 }

@@ -28,20 +28,16 @@
 							<!--<h1 class="site-title screen-reader-text">-->
 
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<img src="<?php echo get_template_directory_uri() . '../assets/icons/logo-white.svg' ?>" class="header-logo" alt="header-logo" />
+								<div class="header-logo-front"></div>
 							</a>
 
 							<!--</h1>-->
 							<p class="site-description"><?php bloginfo( 'description' ); ?></p>
 						</div><!-- .site-branding -->
 
-
-						<div class="nav-cancel">
-							<img src="<?php echo get_template_directory_uri().'../assets/icons/cancel_icon.svg' ?>" />
-						</div>
 						<div class="main-nav" id="show-navi">
 							<a class="hamburger" href="#">
-								<img src="<?php echo get_template_directory_uri().'../assets/icons/menu-white.png' ?>" />
+								<div class="hamburger-front"></div>
 							</a>
 						
 						</div>
