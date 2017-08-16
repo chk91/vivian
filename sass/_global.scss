@@ -6,9 +6,9 @@ $desktop-width: 1240px;
 $tablet-width: 641px;
 
 * {
-    font-family: 'Nunito';
+    font-family: 'Avenir';
+    font-weight: normal;
     font-style: normal;
-    font-stretch: normal;
 }
 
 li {
@@ -47,4 +47,5 @@ li {
     text-align: center;
     text-transform: uppercase;
     padding: 2rem 0;
+    font-weight: 300;
 }

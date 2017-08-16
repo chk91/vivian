@@ -150,10 +150,94 @@ table {
   font-weight: 300;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Avenir Black Oblique';
+  src: url("../../assets/fonts/Avenir-BlackOblique.eot");
+  src: url("../../assets/fonts/Avenir-BlackOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-BlackOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir-BlackOblique.woff") format("woff"), url("../../assets/fonts/Avenir-BlackOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir-BlackOblique.svg#Avenir-BlackOblique") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Roman.eot");
+  src: url("../../assets/fonts/Avenir-Roman.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Roman.woff2") format("woff2"), url("../../assets/fonts/Avenir-Roman.woff") format("woff"), url("../../assets/fonts/Avenir-Roman.ttf") format("truetype"), url("../../assets/fonts/Avenir-Roman.svg#Avenir-Roman") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-HeavyOblique.eot");
+  src: url("../../assets/fonts/Avenir-HeavyOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-HeavyOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir-HeavyOblique.woff") format("woff"), url("../../assets/fonts/Avenir-HeavyOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir-HeavyOblique.svg#Avenir-HeavyOblique") format("svg");
+  font-weight: 900;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Medium.eot");
+  src: url("../../assets/fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Medium.woff2") format("woff2"), url("../../assets/fonts/Avenir-Medium.woff") format("woff"), url("../../assets/fonts/Avenir-Medium.ttf") format("truetype"), url("../../assets/fonts/Avenir-Medium.svg#Avenir-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../assets/fonts/Avenir-BookOblique.eot");
+  src: url("../../assets/fonts/Avenir-BookOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-BookOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir-BookOblique.woff") format("woff"), url("../../assets/fonts/Avenir-BookOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir-BookOblique.svg#Avenir-BookOblique") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Light.eot");
+  src: url("../../assets/fonts/Avenir-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Light.woff2") format("woff2"), url("../../assets/fonts/Avenir-Light.woff") format("woff"), url("../../assets/fonts/Avenir-Light.ttf") format("truetype"), url("../../assets/fonts/Avenir-Light.svg#Avenir-Light") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../../assets/fonts/Avenir-Book.eot");
+  src: url("../../assets/fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Book.woff2") format("woff2"), url("../../assets/fonts/Avenir-Book.woff") format("woff"), url("../../assets/fonts/Avenir-Book.ttf") format("truetype"), url("../../assets/fonts/Avenir-Book.svg#Avenir-Book") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-LightOblique.eot");
+  src: url("../../assets/fonts/Avenir-LightOblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-LightOblique.woff2") format("woff2"), url("../../assets/fonts/Avenir-LightOblique.woff") format("woff"), url("../../assets/fonts/Avenir-LightOblique.ttf") format("truetype"), url("../../assets/fonts/Avenir-LightOblique.svg#Avenir-LightOblique") format("svg");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Black.eot");
+  src: url("../../assets/fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Black.woff2") format("woff2"), url("../../assets/fonts/Avenir-Black.woff") format("woff"), url("../../assets/fonts/Avenir-Black.ttf") format("truetype"), url("../../assets/fonts/Avenir-Black.svg#Avenir-Black") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("Avenir-MediumOblique.eot");
+  src: url("Avenir-MediumOblique.eot?#iefix") format("embedded-opentype"), url("Avenir-MediumOblique.woff2") format("woff2"), url("Avenir-MediumOblique.woff") format("woff"), url("Avenir-MediumOblique.ttf") format("truetype"), url("Avenir-MediumOblique.svg#Avenir-MediumOblique") format("svg");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Oblique.eot");
+  src: url("../../assets/fonts/Avenir-Oblique.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Oblique.woff2") format("woff2"), url("../../assets/fonts/Avenir-Oblique.woff") format("woff"), url("../../assets/fonts/Avenir-Oblique.ttf") format("truetype"), url("../../assets/fonts/Avenir-Oblique.svg#Avenir-Oblique") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Avenir';
+  src: url("../../assets/fonts/Avenir-Heavy.eot");
+  src: url("../../assets/fonts/Avenir-Heavy.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Avenir-Heavy.woff2") format("woff2"), url("../../assets/fonts/Avenir-Heavy.woff") format("woff"), url("../../assets/fonts/Avenir-Heavy.ttf") format("truetype"), url("../../assets/fonts/Avenir-Heavy.svg#Avenir-Heavy") format("svg");
+  font-weight: 900;
+  font-style: normal; }
+
 * {
-  font-family: 'Nunito';
-  font-style: normal;
-  font-stretch: normal; }
+  font-family: 'Avenir';
+  font-weight: normal;
+  font-style: normal; }
 
 li {
   list-style: none; }
@@ -183,7 +267,8 @@ li {
   font-size: 30px;
   text-align: center;
   text-transform: uppercase;
-  padding: 2rem 0; }
+  padding: 2rem 0;
+  font-weight: 300; }
 
 /*--------------------------------------------------------------
 # Typography
@@ -566,9 +651,12 @@ object {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 2rem 4rem 0 4rem;
+  padding: 2rem 0 0 2rem;
   width: 100vw;
   background-color: white; }
+  @media (min-width: 641px) {
+    .header-bar {
+      padding: 2rem 4rem 0 4rem; } }
 
 .header-logo-front {
   height: 100px;
@@ -790,7 +878,7 @@ object {
 
 .greeting-header {
   font-size: 40px;
-  font-weight: normal !important;
+  font-weight: 200 !important;
   padding: 0 2rem; }
   @media (min-width: 641px) {
     .greeting-header {
@@ -1052,6 +1140,15 @@ object {
     .wpcf7-textarea {
       max-width: 500px; } }
 
+input::-webkit-input-placeholder {
+  font-size: 0.8rem; }
+
+input:-ms-input-placeholder {
+  font-size: 0.8rem; }
+
+input::placeholder {
+  font-size: 0.8rem; }
+
 .wpcf7-submit {
   display: -ms-flexbox;
   display: flex;
@@ -1103,7 +1200,7 @@ object {
   display: flex;
   position: relative; }
   .ihf-grid-result-basic-info-item1 b, .ihf-grid-result-basic-info-item2 b, .ihf-grid-result-basic-info-item3 b {
-    font-size: 30px;
+    font-size: 28px;
     padding-top: 10px;
     padding-right: 3px;
     color: #0088FF; }
