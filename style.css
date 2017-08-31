@@ -248,7 +248,7 @@ li {
   margin: 0 auto; }
   @media (min-width: 641px) {
     .container, #ihomefinderquicksearchwidget-7, .ihf-listing-detail {
-      max-width: 720px; } }
+      max-width: 680px; } }
   @media (min-width: 1240px) {
     .container, #ihomefinderquicksearchwidget-7, .ihf-listing-detail {
       max-width: 1240px; } }
@@ -975,6 +975,9 @@ object {
   #ihomefinderpropertiesgallery-2 a {
     margin: 0 auto; }
 
+.home .about-content {
+  padding: 0 0 2rem 0; }
+
 .home #ihf-main-container .col-xs-12 {
   padding: 1rem; }
   .home #ihf-main-container .col-xs-12 a {
@@ -990,7 +993,10 @@ object {
   max-width: 500px !important; }
 
 .page-template-about-me section {
-  padding: 4rem; }
+  padding: 2rem; }
+  @media (min-width: 641px) {
+    .page-template-about-me section {
+      padding: 4rem; } }
 
 .about-content {
   text-align: center;
@@ -1007,7 +1013,7 @@ object {
 
 .intro-content {
   text-align: center;
-  padding: 2rem; }
+  padding-top: 2rem; }
   @media (min-width: 641px) {
     .intro-content {
       padding: 0 2rem 0 2rem; } }
@@ -1087,6 +1093,9 @@ object {
 .review-wrapper {
   padding-top: 1rem;
   max-width: 570px; }
+  @media (min-width: 641px) {
+    .review-wrapper {
+      max-width: none; } }
 
 .client-name {
   text-align: end;

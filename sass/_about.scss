@@ -1,5 +1,8 @@
 .page-template-about-me section {
-    padding: 4rem;
+    padding: 2rem;
+    @include tablet {
+        padding: 4rem;
+    }
 }
 
 .about-content {
@@ -20,7 +23,7 @@
 
 .intro-content {
     text-align: center;
-    padding: 2rem;
+    padding-top: 2rem;
     @include tablet {
         padding: 0 2rem 0 2rem;
     }
@@ -106,6 +109,9 @@
 .review-wrapper {
     padding-top: 1rem;
     max-width: 570px;
+    @include tablet {
+        max-width: none;
+    }
 }
 
 .client-name {

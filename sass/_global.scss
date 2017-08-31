@@ -20,7 +20,7 @@ li {
     max-width: 656px;
     margin: 0 auto;
     @include tablet {
-        max-width: 720px;
+        max-width: 680px;
     }
     @include desktop {
         max-width: 1240px;
