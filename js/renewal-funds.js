@@ -14,6 +14,19 @@ $('.ihf-grid-result-basic-info-item1').prepend('<div class="bedicon"></div>')
 $('.ihf-grid-result-basic-info-item2').prepend('<div class="bathicon"></div>')
 $('.ihf-grid-result-basic-info-item3').prepend('<div class="sqft"></div>')
 
+
+// $('.gallery-prop-info div:nth-child(n+3)').wrap('<div class="ft-properties-details"></div>')
+// $('.gallery-prop-info > .row:eq(1)').prependTo('.gallery-prop-info > .row:eq(0)')
+// $('.gallery-prop-info > .row:eq(0)').append('<div class="ft-prop-details"></div>')
+// $('.gallery-prop-info > .row:eq(0)').addClass('testing')
+
+
+// $('.gallery-prop-info div:nth-child(n+3)').appendTo('.ft-prop-details')
+
+// $('.gallery-prop-info div:nth-child(1)').wrap('<div class="ft-properties-title"></div>')
+
+
+
 // $('.mob-menu-logo-holder').find('img').attr('src', '/assets/icons/gray-quot.png')
 
 console.log("am i working?");

@@ -1,5 +1,6 @@
 .site-header {
     position: fixed;
+    z-index: 10000;
 }
 
 .site-content {
@@ -13,6 +14,7 @@
     padding: 2rem 0 0 2rem;
     width: 100vw;
     background-color: white;
+    z-index: 1!important;
     @include tablet {
         padding: 2rem 4rem 0 4rem;
     }
@@ -21,7 +23,7 @@
 .header-logo-front {
     height: 100px;
     width: 175px;
-    background: url('../../assets/icons/logo.svg') no-repeat center;
+    background: url('../../assets/icons/logo-dark.svg') no-repeat center;
     @include tablet {
         background: url('../../assets/icons/logo-white.svg') no-repeat center;
     }
@@ -30,7 +32,7 @@
 .header-logo-scrolled {
     height: 100px;
     width: 175px;
-    background: url('../../assets/icons/logo.svg') no-repeat center;
+    background: url('../../assets/icons/logo-dark.svg') no-repeat center;
 }
 
 .header-logo, .header-logo-front {
@@ -76,8 +78,10 @@
 
     @include tablet {
         display: flex;
-        justify-content: flex-end;
         position: static;
+    }
+    @include desktop {
+        justify-content: flex-end;
     }
 }
 
@@ -87,6 +91,7 @@
     top: 132px;
     left: 0;
     width: 100%;
+    z-index: 1;
     @include tablet {
         display: flex;
         justify-content: flex-end;
@@ -133,9 +138,12 @@
 }
 
 .main-nav {
-    width: 100%;
+    width: 30%;
+    @include tablet {
+        width: 60%;
+    }
     @include desktop {
-        width: 50%;
+        width: 70%;
     }
 
     ul {
@@ -179,6 +187,7 @@
 
     .header-bar {
         background-color: white;
+        z-index: 1;
         @include tablet {
             background-color: transparent;
         }

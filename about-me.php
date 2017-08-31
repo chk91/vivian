@@ -52,7 +52,7 @@ get_header();
 
         <section class="social">
             <h2 class="blueheader">Let's Get Social</h2>
-            <p class="about-content">Find me on social media for the latest updates on the real estate market!</p>
+            <p class="social-content">Find me on social media for the latest updates on the real estate market!</p>
             <div class="social-icons">
                 <a href="https://www.facebook.com/vivian.yu.58">
                 <i class="fa fa-facebook-square" aria-hidden="true"></i>
@@ -67,10 +67,10 @@ get_header();
         </section>
 
         <section class="contactme">
-            <h2 class="blueheader">Get In Touch</h2>
+            <h2 class="whiteheader">Get In Touch</h2>
             <p class="about-content">Please feel free to contact me with any real estate questions you may have and I'll be in touch with you soon!</p>
             <form action="contact-me-2">
-                <button class="contact-button">Get In Touch</button>
+                <button class="calltoaction">Get In Touch</button>
             </form>
 
         </section>

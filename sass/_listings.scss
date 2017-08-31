@@ -26,6 +26,11 @@
     }
 }
 
+#ihf-main-container .form-control {
+    height: 40px!important;
+    padding: 20px 12px;
+}
+
 .ihf-grid-result-basic-info-item1, .ihf-grid-result-basic-info-item2, .ihf-grid-result-basic-info-item3 {
     display: flex;
     position: relative;
@@ -38,7 +43,7 @@
 }
 
 .ihf-container {
-    min-width: 350px!important;
+    // min-width: 350px!important;
     max-width: 656px!important;
     margin: 0 auto!important;
     @include tablet {
@@ -93,4 +98,19 @@
 
 .btn-primary {
     background-color: #0088FF!important;
+}
+
+.ihf-address {
+    font-size: 1.2rem!important;
+    color: #0088FF;
+    @include tablet {
+        font-size: 1.75rem!important;
+    }
+    @include desktop {
+        font-size: 2rem!important;
+    }
+}
+
+.widget_ihomefinderquicksearchwidget {
+    max-width: 960px!important;
 }

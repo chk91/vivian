@@ -19,7 +19,7 @@
     @include tablet {
         width: 45vw;
     }
-    @include desktop {
+    @include tablet {
         width: 22vw;
     }
     
@@ -47,13 +47,13 @@
 
 .wpcf7-text {
     margin: 1rem 0;
-    height: 40px;
+    height: 45px;
     border-radius: 5px;
     border: 1px solid #979797;
     color: #D8D8D8;
     padding: 0 0.5rem;
     width: 80vw;
-    @include desktop {
+    @include tablet {
         max-width: 500px;
     }
 }
@@ -64,7 +64,7 @@
     color: #D8D8D8;
     padding: 0 0.5rem;
     width: 80vw;
-    @include desktop {
+    @include tablet {
         max-width: 500px;
     }
 }

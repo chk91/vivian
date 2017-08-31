@@ -1,6 +1,6 @@
 .landingpage {
     height: 85vh;
-    background: url("../../assets/background/home.png") no-repeat center center;
+    background: url("../../assets/background/landing-bg-desktop.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -43,8 +43,11 @@
     }
 
     #ihf-main-container .ihf-center{
-        width: 100%!important;
+        // width: 83%!important;
         margin-left: 0!important;
+        @include tablet {
+            width: 100%!important;
+        }
     }
 }
 
@@ -84,7 +87,7 @@
     box-shadow: none;
     height: 45px;
     width: 210px;
-    border: 2px solid $color__brand-color-primary;
+    border: 1px solid $color__brand-color-primary;
     color: $color__brand-color-primary;
     font-size: 20px;
     text-transform: uppercase;
@@ -97,10 +100,45 @@
     }
 }
 
+.calltoaction{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: none;
+    height: 45px;
+    width: 210px;
+    border: 1px solid $color__brand-color-primary;
+    border-radius: 5px;
+    color: $color__brand-color-primary;
+    font-size: 20px;
+    text-transform: uppercase;
+    &:hover {
+        background-color: $color__brand-color-primary;
+        color: white;
+        border: 1px solid white;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+
 // Featured Properties section @@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 .featured-properties {
-    margin-top: 68px;
+    // margin-top: 68px;
+    z-index: 1;
+    background-color: lightgray;
+}
+
+#ihomefinderpropertiesgallery-2 {
+    display: flex!important;
+    flex-direction: column;
+
+    a{
+        // align-self: flex-end;
+        margin: 0 auto;
+    }
 }
 
 .home {
@@ -122,6 +160,18 @@
 }
 
 .gallery-prop-info {
-    position: relative;
-    // height: 100vh;
+    
+    .ihf-small-results-photo {
+        max-width: 500px!important;
+    }
+
+    .row{
+        &:nth-child(1) {
+            // float: right
+        }
+        &:nth-child(n+3) {
+            // float: right;
+        }
+    }
+    
 }

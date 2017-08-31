@@ -17,7 +17,7 @@
 						<div class="self-info">
 						<h3 class="bold-font">Vivian Yu</h3>
 						<p>604-754-8989</p>
-						<p>vyu@pakwyn.com</p>
+						<p>vyu@oakwyn.com</p>
 						</div>
 
 						<div class="work-info">

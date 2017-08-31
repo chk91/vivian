@@ -270,6 +270,14 @@ li {
   padding: 2rem 0;
   font-weight: 300; }
 
+.whiteheader {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  font-weight: 300; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -639,7 +647,8 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .site-header {
-  position: fixed; }
+  position: fixed;
+  z-index: 10000; }
 
 .site-content {
   padding-top: 100px; }
@@ -653,7 +662,8 @@ object {
       align-items: center;
   padding: 2rem 0 0 2rem;
   width: 100vw;
-  background-color: white; }
+  background-color: white;
+  z-index: 1 !important; }
   @media (min-width: 641px) {
     .header-bar {
       padding: 2rem 4rem 0 4rem; } }
@@ -661,7 +671,7 @@ object {
 .header-logo-front {
   height: 100px;
   width: 175px;
-  background: url("../../assets/icons/logo.svg") no-repeat center; }
+  background: url("../../assets/icons/logo-dark.svg") no-repeat center; }
   @media (min-width: 641px) {
     .header-logo-front {
       background: url("../../assets/icons/logo-white.svg") no-repeat center; } }
@@ -669,7 +679,7 @@ object {
 .header-logo-scrolled {
   height: 100px;
   width: 175px;
-  background: url("../../assets/icons/logo.svg") no-repeat center; }
+  background: url("../../assets/icons/logo-dark.svg") no-repeat center; }
 
 .header-logo, .header-logo-front {
   height: 100px; }
@@ -703,9 +713,11 @@ object {
     .main-navigation {
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
       position: static; } }
+  @media (min-width: 1240px) {
+    .main-navigation {
+      -ms-flex-pack: end;
+          justify-content: flex-end; } }
 
 .main-navigation-scrolled {
   display: -ms-flexbox;
@@ -713,7 +725,8 @@ object {
   position: absolute;
   top: 132px;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 1; }
   @media (min-width: 641px) {
     .main-navigation-scrolled {
       display: -ms-flexbox;
@@ -756,10 +769,13 @@ object {
       display: none; } }
 
 .main-nav {
-  width: 100%; }
+  width: 30%; }
+  @media (min-width: 641px) {
+    .main-nav {
+      width: 60%; } }
   @media (min-width: 1240px) {
     .main-nav {
-      width: 50%; } }
+      width: 70%; } }
   .main-nav ul {
     display: -ms-flexbox;
     display: flex;
@@ -793,7 +809,8 @@ object {
   background: transparent !important; }
 
 .home .header-bar {
-  background-color: white; }
+  background-color: white;
+  z-index: 1; }
   @media (min-width: 641px) {
     .home .header-bar {
       background-color: transparent; } }
@@ -841,7 +858,7 @@ object {
 
 .landingpage {
   height: 85vh;
-  background: url("../../assets/background/home.png") no-repeat center center;
+  background: url("../../assets/background/landing-bg-desktop.jpg") no-repeat center center;
   background-size: cover;
   height: 100vh;
   padding-top: 168px; }
@@ -869,8 +886,10 @@ object {
   list-style: none !important; }
 
 .home #ihf-main-container .ihf-center {
-  width: 100% !important;
   margin-left: 0 !important; }
+  @media (min-width: 641px) {
+    .home #ihf-main-container .ihf-center {
+      width: 100% !important; } }
 
 .greeting-wrapper {
   text-align: center;
@@ -908,7 +927,7 @@ object {
   box-shadow: none;
   height: 45px;
   width: 210px;
-  border: 2px solid #0088FF;
+  border: 1px solid #0088FF;
   color: #0088FF;
   font-size: 20px;
   text-transform: uppercase; }
@@ -919,8 +938,41 @@ object {
     box-shadow: none;
     text-shadow: none; }
 
+.calltoaction {
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: white;
+  box-shadow: none;
+  height: 45px;
+  width: 210px;
+  border: 1px solid #0088FF;
+  border-radius: 5px;
+  color: #0088FF;
+  font-size: 20px;
+  text-transform: uppercase; }
+  .calltoaction:hover {
+    background-color: #0088FF;
+    color: white;
+    border: 1px solid white;
+    box-shadow: none;
+    text-shadow: none; }
+
 .featured-properties {
-  margin-top: 68px; }
+  z-index: 1;
+  background-color: lightgray; }
+
+#ihomefinderpropertiesgallery-2 {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  #ihomefinderpropertiesgallery-2 a {
+    margin: 0 auto; }
 
 .home #ihf-main-container .col-xs-12 {
   padding: 1rem; }
@@ -933,15 +985,24 @@ object {
 .property-divider {
   background: white !important; }
 
-.gallery-prop-info {
-  position: relative; }
+.gallery-prop-info .ihf-small-results-photo {
+  max-width: 500px !important; }
 
 .page-template-about-me section {
-  padding: 1rem 0; }
+  padding: 4rem; }
 
 .about-content {
   text-align: center;
+  padding: 0 0 2rem 0;
+  color: white; }
+
+.social-content {
+  text-align: center;
   padding: 0 2rem 2rem 2rem; }
+
+.contactme {
+  background: #0088FF;
+  padding: 4rem; }
 
 .intro-content {
   text-align: center;
@@ -979,7 +1040,9 @@ object {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
-        justify-content: center; } }
+        justify-content: center;
+    margin: 0 auto;
+    max-width: 960px; } }
 
 .meet img {
   height: 100%;
@@ -992,7 +1055,7 @@ object {
       margin: 0; } }
   @media (min-width: 1240px) {
     .meet img {
-      width: 30%; } }
+      width: 40%; } }
 
 @media (min-width: 1240px) {
   .meet p {
@@ -1021,7 +1084,8 @@ object {
   fill: #0088FF !important; }
 
 .review-wrapper {
-  padding-top: 1rem; }
+  padding-top: 1rem;
+  max-width: 570px; }
 
 .client-name {
   text-align: end;
@@ -1036,7 +1100,7 @@ object {
     cursor: default; }
 
 .carousel {
-  width: 90%;
+  width: 85%;
   margin: 0 auto; }
   @media (min-width: 1240px) {
     .carousel {
@@ -1065,13 +1129,14 @@ object {
       font-size: 12px;
       padding-right: 2rem; } }
 
-@media (min-width: 641px) {
-  .flickity-viewport {
-    height: 320px !important; } }
-
-@media (min-width: 1240px) {
-  .flickity-viewport {
-    height: 200px !important; } }
+.flickity-viewport {
+  height: 300px !important; }
+  @media (min-width: 641px) {
+    .flickity-viewport {
+      height: 320px !important; } }
+  @media (min-width: 1240px) {
+    .flickity-viewport {
+      height: 200px !important; } }
 
 .contact-info-wrapper {
   display: -ms-flexbox;
@@ -1098,7 +1163,7 @@ object {
   @media (min-width: 641px) {
     .contactMe-info {
       width: 45vw; } }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .contactMe-info {
       width: 22vw; } }
   .contactMe-info i {
@@ -1120,13 +1185,13 @@ object {
 
 .wpcf7-text {
   margin: 1rem 0;
-  height: 40px;
+  height: 45px;
   border-radius: 5px;
   border: 1px solid #979797;
   color: #D8D8D8;
   padding: 0 0.5rem;
   width: 80vw; }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .wpcf7-text {
       max-width: 500px; } }
 
@@ -1136,7 +1201,7 @@ object {
   color: #D8D8D8;
   padding: 0 0.5rem;
   width: 80vw; }
-  @media (min-width: 1240px) {
+  @media (min-width: 641px) {
     .wpcf7-textarea {
       max-width: 500px; } }
 
@@ -1195,6 +1260,10 @@ input::placeholder {
   #ihf-main-container .col-xs-3 {
     width: 33%; } }
 
+#ihf-main-container .form-control {
+  height: 40px !important;
+  padding: 20px 12px; }
+
 .ihf-grid-result-basic-info-item1, .ihf-grid-result-basic-info-item2, .ihf-grid-result-basic-info-item3 {
   display: -ms-flexbox;
   display: flex;
@@ -1206,7 +1275,6 @@ input::placeholder {
     color: #0088FF; }
 
 .ihf-container {
-  min-width: 350px !important;
   max-width: 656px !important;
   margin: 0 auto !important; }
   @media (min-width: 641px) {
@@ -1257,3 +1325,16 @@ input::placeholder {
 
 .btn-primary {
   background-color: #0088FF !important; }
+
+.ihf-address {
+  font-size: 1.2rem !important;
+  color: #0088FF; }
+  @media (min-width: 641px) {
+    .ihf-address {
+      font-size: 1.75rem !important; } }
+  @media (min-width: 1240px) {
+    .ihf-address {
+      font-size: 2rem !important; } }
+
+.widget_ihomefinderquicksearchwidget {
+  max-width: 960px !important; }

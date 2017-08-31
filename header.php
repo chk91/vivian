@@ -27,7 +27,7 @@
 							<!--<h1 class="site-title screen-reader-text">-->
 
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-								<img src="<?php echo get_template_directory_uri() . '/assets/icons/logo.svg' ?>" class="header-logo" alt="header-logo" />
+								<img src="<?php echo get_template_directory_uri() . '/assets/icons/logo-dark.svg' ?>" class="header-logo" alt="header-logo" />
 							</a>
 
 							<!--</h1>-->
