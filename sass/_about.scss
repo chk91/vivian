@@ -92,14 +92,24 @@
         left: -5.5%!important;
     }
 }
-.flickity-prev-next-button.next {
-    right: -17%!important;
-    box-shadow: none!important;
-    top: 35%!important;
-    @include tablet {
-        right: -5.5%!important;
+    .flickity-prev-next-button.next {
+        right: -17%!important;
+        box-shadow: none!important;
+        top: 35%!important;
+        @include tablet {
+            right: -5.5%!important;
+        }
     }
-}
+
+    .flickity-viewport {
+        height: 350px!important;
+        @include tablet {
+            height: 320px!important;
+        }
+        @include desktop {
+        height: 200px!important;
+        }
+    }
 
 }
 

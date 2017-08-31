@@ -965,7 +965,7 @@ object {
 
 .featured-properties {
   z-index: 1;
-  background-color: lightgray; }
+  background-color: #F8F8F8; }
 
 #ihomefinderpropertiesgallery-2 {
   display: -ms-flexbox !important;
@@ -1083,6 +1083,15 @@ object {
   @media (min-width: 641px) {
     .page-template .flickity-prev-next-button.next {
       right: -5.5% !important; } }
+
+.page-template .flickity-viewport {
+  height: 350px !important; }
+  @media (min-width: 641px) {
+    .page-template .flickity-viewport {
+      height: 320px !important; } }
+  @media (min-width: 1240px) {
+    .page-template .flickity-viewport {
+      height: 200px !important; } }
 
 .flickity-prev-next-button.previous {
   left: -8% !important;
@@ -1207,7 +1216,11 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center; }
+      justify-content: center;
+  font-size: 0.5rem !important; }
+
+.wpcf7-form-control wpcf7-text {
+  font-size: 0.5rem !important; }
 
 .wpcf7-text {
   margin: 1rem 0;
@@ -1216,29 +1229,32 @@ object {
   border: 1px solid #979797;
   color: #D8D8D8;
   padding: 0 0.5rem;
-  width: 80vw; }
+  width: 80vw;
+  font-size: 0.8rem !important; }
   @media (min-width: 641px) {
     .wpcf7-text {
-      max-width: 500px; } }
+      max-width: 500px;
+      font-size: 1rem !important; } }
 
 .wpcf7-textarea {
   border-radius: 5px;
   border: 1px solid #979797;
   color: #D8D8D8;
   padding: 0 0.5rem;
-  width: 80vw; }
+  width: 80vw;
+  font-size: 0.8rem; }
   @media (min-width: 641px) {
     .wpcf7-textarea {
       max-width: 500px; } }
 
 input::-webkit-input-placeholder {
-  font-size: 0.8rem; }
+  font-size: 0.8rem !important; }
 
 input:-ms-input-placeholder {
-  font-size: 0.8rem; }
+  font-size: 0.8rem !important; }
 
 input::placeholder {
-  font-size: 0.8rem; }
+  font-size: 0.8rem !important; }
 
 .wpcf7-submit {
   display: -ms-flexbox;
