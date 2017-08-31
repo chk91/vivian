@@ -83,6 +83,26 @@
 
 // Flickty Custom CSS @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
+.page-template {
+    .flickity-prev-next-button.previous {
+    left: -17%!important;
+    box-shadow: none!important;
+    top: 35%!important;
+    @include tablet {
+        left: -5.5%!important;
+    }
+}
+.flickity-prev-next-button.next {
+    right: -17%!important;
+    box-shadow: none!important;
+    top: 35%!important;
+    @include tablet {
+        right: -5.5%!important;
+    }
+}
+
+}
+
 .flickity-prev-next-button.previous {
     left: -8%!important;
     box-shadow: none!important;

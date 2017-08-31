@@ -1068,6 +1068,22 @@ object {
   .meet p {
     width: 40%; } }
 
+.page-template .flickity-prev-next-button.previous {
+  left: -17% !important;
+  box-shadow: none !important;
+  top: 35% !important; }
+  @media (min-width: 641px) {
+    .page-template .flickity-prev-next-button.previous {
+      left: -5.5% !important; } }
+
+.page-template .flickity-prev-next-button.next {
+  right: -17% !important;
+  box-shadow: none !important;
+  top: 35% !important; }
+  @media (min-width: 641px) {
+    .page-template .flickity-prev-next-button.next {
+      right: -5.5% !important; } }
+
 .flickity-prev-next-button.previous {
   left: -8% !important;
   box-shadow: none !important;
