@@ -763,13 +763,14 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   height: 50px;
+  margin-left: 35px;
   background: url("../../assets/icons/menu-blue.jpg") no-repeat center; }
   @media (min-width: 641px) {
     .hamburger {
       display: none; } }
 
 .main-nav {
-  width: 30%; }
+  width: 100%; }
   @media (min-width: 641px) {
     .main-nav {
       width: 60%; } }
