@@ -48,7 +48,7 @@ get_header('front'); ?>
 			<div class="ft-properties container">
 					<?php
 					echo do_shortcode(
-						'[widgets_on_pages id="Featured Properties"]'
+						'[optima_express_gallery_slider rows="1" nav="top" style="grid" columns="3" effect="slide" auto="false" maxResults="25"]'
 					);
 					?>
 			</div>

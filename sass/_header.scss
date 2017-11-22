@@ -3,21 +3,18 @@
     z-index: 10000;
 }
 
-.site-content {
-    padding-top: 100px;
+.site-branding {
+    padding-left: 2.5rem;
 }
 
 .header-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 0 0 2rem;
     width: 100vw;
     background-color: white;
     z-index: 1!important;
-    @include tablet {
-        padding: 2rem 4rem 0 4rem;
-    }
+
 }
 
 .header-logo-front {
@@ -37,6 +34,8 @@
 
 .header-logo, .header-logo-front {
     height: 100px;
+    min-width: 126px;
+    padding-top: 10px;
 }
 
 .nav-button {
@@ -45,20 +44,10 @@
     }
 }
 
-.hamburger-front {
-    height: 50px;
-    background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
-}
-
-// .hamburger-front-scrolled {
-//     height: 50px;
-//     background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
-// }
-
 .main-navigation {
     display: none;
     position: absolute;
-    top: 132px;
+    top: 100px;
     left: 0;
     background: white;
     width: 100%;
@@ -103,10 +92,10 @@
     display: none;
 
     a {
-        color: #0088FF;
+        color: #005db8;
         @include tablet {
             &:hover {
-                border-top: 2px solid #0088FF;
+                border-top: 2px solid #005db8;
             }
         }
     }
@@ -114,7 +103,7 @@
 
 .sub-menu {
     flex-direction: row;
-    background-color: #0088FF;
+    background-color: #005db8;
     color: white;
     a {
         color: white;
@@ -129,10 +118,10 @@
 
 .hamburger {
     display: flex;
-    justify-content: center;
-    height: 50px;
-    margin-left: 35px;
-    background: url('../../assets/icons/menu-blue.jpg') no-repeat center;
+    justify-content: flex-end;
+    padding-right: 60px;
+    font-size: 40px;
+    color: #005db8;
     @include tablet {
         display: none;
     }
@@ -144,7 +133,7 @@
         width: 60%;
     }
     @include desktop {
-        width: 70%;
+        width: 100%;
     }
 
     ul {
@@ -172,7 +161,7 @@
 }
 
 #show-nav {
-    background: #0088FF;
+    background: #005db8;
     color: black;
     display: block;
     @include tablet {
@@ -195,7 +184,7 @@
     }
 
     .menu a {
-        color: #0088FF;
+        color: #005db8;
         &:hover {
             color: $color__brand-color-secondary;
         }
@@ -210,7 +199,7 @@
 
     .menu-scrolled {
         a {
-        color: #0088FF;
+        color: #005db8;
         }
     }
 
@@ -218,7 +207,7 @@
     background-color: white;
     color: white;
         a {
-            color: #0088FF;
+            color: #005db8;
         }
     }
     

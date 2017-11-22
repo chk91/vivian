@@ -5,6 +5,10 @@
     }
 }
 
+.page-template-about-me .social {
+    background-color: #f4f4f4;
+}
+
 .about-content {
     text-align: center;
     padding: 0 0 2rem 0;
@@ -17,13 +21,20 @@
 }
 
 .contactme {
-    background: #0088FF;
-    padding: 4rem;
+    background: #005db8;
+    padding: 5rem 0;
+    @include tablet {
+        padding: 2rem 0;
+    }
+    form {
+        padding-bottom: 2rem;
+    }
 }
 
 .intro-content {
     text-align: center;
     padding-top: 2rem;
+    font-weight: 300;
     @include tablet {
         padding: 0 2rem 0 2rem;
     }
@@ -38,6 +49,7 @@
     width: 75%;
     justify-content: space-around;
     margin: 0 auto;
+    padding-bottom: 2rem;
     @include tablet {
         width: 60%;
     }
@@ -52,6 +64,11 @@
 
 .ihf-grid-result-price title-bar-1 {
     background-color: $color__brand-color-primary !important;
+}
+
+.meet-wrapper {
+    background-color: #f4f4f4;
+    padding-top: 2rem!important;
 }
 
 .meet {
@@ -100,17 +117,6 @@
             right: -5.5%!important;
         }
     }
-
-    .flickity-viewport {
-        height: 350px!important;
-        @include tablet {
-            height: 320px!important;
-        }
-        @include desktop {
-        height: 200px!important;
-        }
-    }
-
 }
 
 .flickity-prev-next-button.previous {
@@ -188,7 +194,7 @@
             font-size: 16px;
         }
         @include desktop {
-            font-size: 12px;
+            font-size: 16px;
             padding-right: 2rem;
         }
         
@@ -196,11 +202,11 @@
 }
 
 .flickity-viewport {
-    height: 300px!important;
+    height: 320px!important;
     @include tablet {
-        height: 320px!important;
+        height: 420px!important;
     }
     @include desktop {
-    height: 200px!important;
+    height: 320px!important;
     }
 }

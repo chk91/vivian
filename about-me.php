@@ -7,20 +7,23 @@ get_header();
 
 	<div class="entry-content">
 
+        
+
+        <section class="meet-wrapper">
         <h2 class="blueheader">Meet Vivian</h2>
+            <div class="meet">
 
-        <section class="meet">
+                        <?php 
+                        if ( has_post_thumbnail() ) {
+                        the_post_thumbnail();
+                        }  ?>
 
-            <?php 
-            if ( has_post_thumbnail() ) {
-            the_post_thumbnail();
-            }  ?>
+            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
-  <div class="intro-content"><?php the_content(); ?></div>
-<?php endwhile; ?>
-<?php endif; ?>            
+            <div class="intro-content"><?php the_content(); ?></div>
+            <?php endwhile; ?>
+            <?php endif; ?>    
+            </div>        
         </section>
 
 

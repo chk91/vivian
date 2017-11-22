@@ -35,7 +35,18 @@
 
     .ihf-for-sale-price {
         font-size: 18px;
-        color: $color__brand-color-primary;
+        color: white;
+    }
+
+    #ihf-main-container .col-xs-4 {
+        width: 100%;
+        z-index: 1000!important;
+        @include tablet {
+            width: 50%;
+        }
+        @include desktop {
+            width: 33%;
+        }
     }
 
     #ihomefinderpropertiesgallery-2 {
@@ -91,6 +102,7 @@
     color: $color__brand-color-primary;
     font-size: 20px;
     text-transform: uppercase;
+    border-radius: 5px;
     &:hover {
         background-color: $color__brand-color-primary;
         color: white;
@@ -128,7 +140,13 @@
 .featured-properties {
     // margin-top: 68px;
     z-index: 1;
-    background-color: #F8F8F8;
+    // background-color: #F8F8F8;
+    background: #ffffff; /* Old Browsers */
+background: -webkit-linear-gradient(top,#ffffff,#f4f4f4); /*Safari 5.1-6*/
+background: -o-linear-gradient(top,#ffffff,#f4f4f4); /*Opera 11.1-12*/
+background: -moz-linear-gradient(top,#ffffff,#f4f4f4); /*Fx 3.6-15*/
+background: linear-gradient(to bottom, #ffffff, #f4f4f4); /*Standard*/
+    
 }
 
 #ihomefinderpropertiesgallery-2 {
@@ -144,12 +162,13 @@
 .home {
 
     .about-content {
-        padding: 0 0 2rem 0;
+        padding: 0 1rem 2rem 1rem;
     }
     #ihf-main-container .col-xs-12 {
+        z-index: 1000;
         padding: 1rem;
         a {
-            font-size: 20px;
+            font-size: 19px;
         }
     }
 }

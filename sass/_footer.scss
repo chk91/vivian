@@ -1,18 +1,57 @@
 .site-footer {
-    background-color: #DDDDDD;
-    padding: 2rem;
+    background-color: #F4F4F4;
+    padding: 1rem;
+    @include tablet {
+        padding: 2rem;
+    }
 }
 
-.self-info, .work-info{
+.footer-wrapper {
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.self-info{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
+    font-size: 13px;
+    h3{
+        padding-right: 0.5rem;
+        min-width: 90px
+    }
+    p{
+        min-width: 116px;
+        padding: 0 0.5rem;
+    }
+    @include tablet {
+        font-size: 14px;
+    }
+}
+
+.work-info {
+    text-align: center;
     font-size: 14px;
+    padding: 15px;
+    min-width: 188px;
+    @include tablet {
+        margin-right: 0;
+    }
 }
 
 .copyright-info {
-    text-align: end;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     font-size: 8px;
+    @include tablet {
+        text-align: end;
+    }
 }
 
 .bold-font {
@@ -22,4 +61,45 @@
 .bold-caps {
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.social-icons-footer {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 15px;
+    @include tablet {
+        width: 60%;
+    }
+    @include desktop {
+        width: 20%;
+    }
+    i {
+    color: $color__brand-color-primary;
+    font-size: 40px;
+    }
+}
+.logo-and-info-wrapper {
+    display: flex;
+}
+.work-info-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    @include tablet {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    }
+}
+
+.company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.oakwyn-logo {
+    width: 64px;
+    height: auto;
 }

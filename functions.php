@@ -123,3 +123,18 @@ function wpdocs_custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
+// Enable shortcodes in widgets
+add_filter( 'widget_text', 'shortcode_unautop' );
+add_filter('widget_text', 'do_shortcode');
+
+// Enable PHP in widgets
+add_filter('widget_text','execute_php',100);
+function execute_php($html){
+     if(strpos($html,"<"."?php")!==false){
+          ob_start();
+          eval("?".">".$html);
+          $html=ob_get_contents();
+          ob_end_clean();
+     }
+     return $html;
+}

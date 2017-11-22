@@ -37,7 +37,7 @@
     b {
         font-size: 28px;
         padding-top: 10px;
-        padding-right: 3px;
+        padding-right: 5px;
         color: $color__brand-color-primary;
     }
 }
@@ -97,12 +97,12 @@
 }
 
 .btn-primary {
-    background-color: #0088FF!important;
+    background-color: #005db8!important;
 }
 
 .ihf-address {
     font-size: 1.2rem!important;
-    color: #0088FF;
+    color: #005db8;
     @include tablet {
         font-size: 1.75rem!important;
     }

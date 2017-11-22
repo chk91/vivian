@@ -39,9 +39,7 @@
 							<img src="<?php echo get_template_directory_uri().'/assets/icons/cancel_icon.svg' ?>" />
 						</div>
 						<div class="main-nav" id="show-navi">
-							<a class="hamburger" href="#">
-								<div class="hamburger-front"></div>
-							</a>
+							<i class="fa fa-bars hamburger" aria-hidden="true"></i>
 						</div>
 							<nav id="site-navigation" class="main-navigation" role="navigation">
 								<?php wp_nav_menu( array( 'container_class' => 'main-nav', 'container' => 'nav'));?>
